@@ -10,11 +10,16 @@
   letter-spacing: 0.06em;
   font-family: inherit;
   border-radius: 4px;
-  padding: 10px 32px;
-  width: 216px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  min-width: 200px;
   border: 0px;
 
   transition: background-color var(--trns);
+
+  @media screen and (min-width: 1200px) {
+    min-width: 216px;
+  }
 
   &:hover,
   &:focus {

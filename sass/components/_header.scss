@@ -1,25 +1,39 @@
 .header {
+  position: relative;
   background-color: var(--secondary-text-color);
   border-bottom: 1px solid #ececec;
-  height: 80px;
+  height: 60px;
+  @media screen and (min-width: 768px) {
+    height: 80px;
+  }
 }
 .contacts-icon {
   margin-right: 10px;
 }
 
+@media screen and (max-width: 767px) {
+  .header-contacts {
+    display: none;
+  }
+}
 .header-contacts {
-  display: flex;
-  margin-left: auto;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: auto;
+
+    &__item:nth-child(1) {
+      margin-right: 30px;
+    }
+  }
 
   &__link {
     display: flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    // padding-top: 32px;
+    // padding-bottom: 32px;
     align-items: center;
   }
-
-  &__item {
-    margin-right: 30px;
+  &__link:nth-child(1) {
+    margin-bottom: 10px;
   }
 
   &__link {
@@ -42,9 +56,22 @@
     fill: var(--accent-color);
   }
 
-  &__icon {
+  &__icon-mail {
     margin-right: 10px;
     fill: var(--title-text-color);
     transition: fill var(--trns);
+    @media screen and (min-width: 1200px) {
+      width: 16px;
+      height: 12px;
+    }
+  }
+  &__icon-phone {
+    margin-right: 10px;
+    fill: var(--title-text-color);
+    transition: fill var(--trns);
+    @media screen and (min-width: 1200px) {
+      width: 10px;
+      height: 16px;
+    }
   }
 }

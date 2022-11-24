@@ -1,8 +1,14 @@
-.advantages {
-  visibility: hidden;
-  pointer-events: none;
-  position: absolute;
+@media screen and (max-width: 1199px) {
+  .advantages {
+    display: none;
+  }
 }
+
+// .advantages {
+//   visibility: hidden;
+//   pointer-events: none;
+//   position: absolute;
+// }
 
 .features {
   padding-top: 60px;
