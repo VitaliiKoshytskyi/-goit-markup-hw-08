@@ -1,8 +1,6 @@
 .menu-toggle {
   margin-left: auto;
 
-  //   min-height: 40px;
-  //   min-width: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -39,7 +37,7 @@
   z-index: 999;
 
   transform: translateX(100%);
-  transition: transform 250ms ease-in-out;
+  transition: transform var(--trns);
 
   &.is-open {
     transform: translateX(0);
@@ -48,8 +46,8 @@
 
 .menu-container .menu-toggle {
   position: absolute;
-  top: 16px;
-  right: 16px;
+  top: 10px;
+  right: 15px;
   color: #fff;
 }
 
@@ -66,7 +64,7 @@
 .mobile-menu-link {
   display: block;
   font-size: 40px;
-  line-height: 47px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   color: #212121;
   text-decoration: none;
@@ -89,7 +87,7 @@
 .mobile-contacts-link {
   font-weight: 500;
   font-size: 24px;
-  line-height: calc(28 / 24);
+  line-height: 1.17;
   letter-spacing: 0.02em;
 
   color: #757575;

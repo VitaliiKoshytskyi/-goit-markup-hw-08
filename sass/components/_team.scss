@@ -19,16 +19,10 @@
   }
 
   &__box-one,
-  &__box-three {
-    padding: 30px 70px;
-  }
-
-  &__box-two {
-    padding: 30px 61px 30px 62px;
-  }
-
+  &__box-three,
+  &__box-two,
   &__box-four {
-    padding: 30px 62px 30px 63px;
+    margin-top: 30px;
   }
 
   &__list {
@@ -82,7 +76,8 @@
 .social {
   display: flex;
   justify-content: center;
-  padding: 16px 32px 30px 32px;
+  margin-bottom: 24px;
+  margin-top: 16px;
   gap: 10px;
 
   &__link {
