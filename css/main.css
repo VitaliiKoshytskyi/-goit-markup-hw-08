@@ -131,10 +131,16 @@ img {
   text-decoration: none;
   letter-spacing: 0.02em;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.16;
   -webkit-transition: color var(--trns);
   transition: color var(--trns);
+}
+@media screen and (min-width: 1200px) {
+  .header-contacts__link {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 .header-contacts__link:hover, .header-contacts__link:focus {
   color: var(--accent-color);
@@ -242,6 +248,7 @@ img {
 
 .mobile-menu-link {
   display: block;
+  font-weight: 500;
   font-size: 40px;
   line-height: 1.17;
   letter-spacing: 0.02em;
@@ -249,6 +256,7 @@ img {
   text-decoration: none;
 }
 .mobile-menu-link.current {
+  font-weight: 500;
   color: #2196f3;
 }
 
@@ -268,8 +276,13 @@ img {
   color: #757575;
 }
 .mobile-contacts-link.accent {
-  font-size: 34px;
+  font-size: 27px;
   color: #2196f3;
+}
+@media screen and (min-width: 380px) {
+  .mobile-contacts-link.accent {
+    font-size: 34px;
+  }
 }
 
 .mobile-socials {
@@ -278,7 +291,12 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 10px;
+  gap: 30px;
+}
+@media screen and (min-width: 480px) {
+  .mobile-socials {
+    gap: 10px;
+  }
 }
 
 .mobile-socials-link {
@@ -495,7 +513,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
-    width: 696px;
+    max-width: 696px;
     font-size: 44px;
     line-height: 1.36;
   }
@@ -1114,6 +1132,7 @@ img {
           box-sizing: border-box;
   padding: 15px;
   width: 100%;
+  color: rgba(255, 255, 255, 0.6);
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1121,7 +1140,6 @@ img {
   border-radius: 4px;
   background-color: transparent;
   outline: 1px solid transparent;
-  color: var(--secondary-text-color);
 }
 @media screen and (min-width: 480px) {
   .footer-signup__input {
@@ -1376,7 +1394,7 @@ img {
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
-  width: 450px;
+  width: 95%;
   height: 609px;
   background-color: var(--secondary-text-color);
   padding: 40px;
@@ -1387,6 +1405,11 @@ img {
   transition: -webkit-transform var(--trns);
   transition: transform var(--trns);
   transition: transform var(--trns), -webkit-transform var(--trns);
+}
+@media screen and (min-width: 480px) {
+  .hero-modal-button {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1561,8 +1584,8 @@ img {
 
 ::-webkit-input-placeholder {
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16px;
+  font-size: 16px;
+  line-height: 1.25px;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
   padding-top: 6px;
@@ -1570,8 +1593,8 @@ img {
 
 ::-moz-placeholder {
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16px;
+  font-size: 16px;
+  line-height: 1.25px;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
   padding-top: 6px;
@@ -1579,8 +1602,8 @@ img {
 
 :-ms-input-placeholder {
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16px;
+  font-size: 16px;
+  line-height: 1.25px;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
   padding-top: 6px;
@@ -1588,8 +1611,8 @@ img {
 
 ::-ms-input-placeholder {
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16px;
+  font-size: 16px;
+  line-height: 1.25px;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
   padding-top: 6px;
@@ -1597,8 +1620,8 @@ img {
 
 ::placeholder {
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16px;
+  font-size: 16px;
+  line-height: 1.25px;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
   padding-top: 6px;

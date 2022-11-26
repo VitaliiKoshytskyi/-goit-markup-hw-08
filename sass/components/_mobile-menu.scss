@@ -65,6 +65,7 @@
 
 .mobile-menu-link {
   display: block;
+  font-weight: 500;
   font-size: 40px;
   line-height: 1.17;
   letter-spacing: 0.02em;
@@ -72,6 +73,7 @@
   text-decoration: none;
 
   &.current {
+    font-weight: 500;
     color: #2196f3;
   }
 }
@@ -95,15 +97,23 @@
   color: #757575;
 
   &.accent {
-    font-size: 34px;
+    font-size: 27px;
+
     color: #2196f3;
+    @media screen and (min-width: 380px) {
+      font-size: 34px;
+    }
   }
 }
 
 .mobile-socials {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+
+  gap: 30px;
+  @media screen and (min-width: 480px) {
+    gap: 10px;
+  }
 }
 
 .mobile-socials-link {
