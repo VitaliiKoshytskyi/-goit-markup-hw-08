@@ -38,9 +38,11 @@
 
   transform: translateX(100%);
   transition: transform var(--trns);
+  display: none;
 
   &.is-open {
     transform: translateX(0);
+    display: flex;
   }
 }
 

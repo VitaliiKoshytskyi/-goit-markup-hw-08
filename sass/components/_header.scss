@@ -26,6 +26,11 @@
     display: flex;
     margin-left: auto;
 
+    align-items: center;
+    &__item:not(:last-child) {
+      margin-bottom: 0;
+    }
+
     &__item:nth-child(1) {
       margin-right: 30px;
     }
