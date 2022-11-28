@@ -11,10 +11,18 @@
     @media screen and (min-width: 1200px) {
       flex-basis: calc((100% - 60px) / 3);
     }
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
   }
 
   &__link {
     display: block;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &__link:hover,
@@ -35,6 +43,9 @@
     border: 1px solid #eeeeee;
     border-top: 0;
     padding: 20px 24px;
+    @media screen and (min-width: 768px) {
+      flex-grow: 1;
+    }
   }
 
   &__heading {
@@ -98,11 +109,5 @@
   &__link:hover &__overlay::before {
     opacity: 1;
     transform: translateY(0%);
-  }
-}
-
-.additional-padding {
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    padding: 20px 24px 56px 24px;
   }
 }
